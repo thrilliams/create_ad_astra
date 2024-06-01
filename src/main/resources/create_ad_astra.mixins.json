@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "co.aethre.create_ad_astra.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "common.DivingHelmetItemMixin",
+    "common.OxygenApiImplMixin",
+    "common.TemperatureApiImplMixin"
+  ],
+  "client": [
+    "client.RemainingAirOverlayMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "create_ad_astra",
+  "version": "${version}",
+  "name": "Create + Ad Astra",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/june/untitled"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/create_ad_astra/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "co.aethre.create_ad_astra.CreateAdAstra"
+    ],
+    "client": [
+    ]
+  },
+  "mixins": [
+    "create_ad_astra.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
