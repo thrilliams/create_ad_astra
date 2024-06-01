@@ -6,7 +6,7 @@
   "description": "",
   "authors": [],
   "contact": {
-    "repo": "https://github.com/june/untitled"
+    "repo": "https://github.com/thrilliams/create_ad_astra"
   },
   "license": "GPL-3.0",
   "icon": "assets/create_ad_astra/icon.png",
@@ -24,6 +24,8 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "create": ">=${create_version}",
+    "ad_astra": ">=${ad_astra_version}"
   }
 }

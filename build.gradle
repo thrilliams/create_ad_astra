@@ -43,15 +43,18 @@ dependencies {
 }
 
 processResources {
-    inputs.property "version", project.version
-    inputs.property "minecraft_version", project.minecraft_version
-    inputs.property "loader_version", project.loader_version
-    filteringCharset "UTF-8"
+    Map<String, String> properties = Map.of(
+            "version", version,
+            "minecraft_version", minecraft_version,
+            "loader_version", loader_version,
+            "create_version", create_version,
+            "ad_astra_version", ad_astra_version,
+    ) as Map<String, String>
+
+    inputs.properties(properties)
 
     filesMatching("fabric.mod.json") {
-        expand "version": project.version,
-                "minecraft_version": project.minecraft_version,
-                "loader_version": project.loader_version
+        expand properties
     }
 }
 
